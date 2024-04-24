@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1d485ee0bb592f8d5dc151b6b82ad8ab {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1d485ee0bb592f8d5dc151b6b82ad8ab" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1d485ee0bb592f8d5dc151b6b82ad8ab = L.map(
+                "map_1d485ee0bb592f8d5dc151b6b82ad8ab",
+                {
+                    center: [34.6863, 135.5197],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f6d3da002cbd2d237cdb18c98fb6c770 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1d485ee0bb592f8d5dc151b6b82ad8ab);
+        
+    
+            var marker_1f5c29bde8efa60814a0372e0bf53e1f = L.marker(
+                [34.6873, 135.526],
+                {}
+            ).addTo(map_1d485ee0bb592f8d5dc151b6b82ad8ab);
+        
+    
+            var icon_9c81df2ac8ae9b569b030613ad1b15b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1f5c29bde8efa60814a0372e0bf53e1f.setIcon(icon_9c81df2ac8ae9b569b030613ad1b15b8);
+        
+    
+            marker_1f5c29bde8efa60814a0372e0bf53e1f.bindTooltip(
+                `<div>
+                     Osaka Castle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3835f051db7f764b09980a2f67571f1c = L.marker(
+                [34.6687, 135.5018],
+                {}
+            ).addTo(map_1d485ee0bb592f8d5dc151b6b82ad8ab);
+        
+    
+            var icon_18a10110713fff488b7e8e8099628645 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3835f051db7f764b09980a2f67571f1c.setIcon(icon_18a10110713fff488b7e8e8099628645);
+        
+    
+            marker_3835f051db7f764b09980a2f67571f1c.bindTooltip(
+                `<div>
+                     Dotonbori
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65f99af539cfef740f86bd03af0ea6c4 = L.marker(
+                [34.6655, 135.4321],
+                {}
+            ).addTo(map_1d485ee0bb592f8d5dc151b6b82ad8ab);
+        
+    
+            var icon_9418537e4a1092f1bf02a480d07fa26c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_65f99af539cfef740f86bd03af0ea6c4.setIcon(icon_9418537e4a1092f1bf02a480d07fa26c);
+        
+    
+            marker_65f99af539cfef740f86bd03af0ea6c4.bindTooltip(
+                `<div>
+                     Universal Studios Japan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad92546f612b30cd687b990f2a6e331d = L.marker(
+                [34.7054, 135.4909],
+                {}
+            ).addTo(map_1d485ee0bb592f8d5dc151b6b82ad8ab);
+        
+    
+            var icon_9083814b56869fe42985c6cc41380a94 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ad92546f612b30cd687b990f2a6e331d.setIcon(icon_9083814b56869fe42985c6cc41380a94);
+        
+    
+            marker_ad92546f612b30cd687b990f2a6e331d.bindTooltip(
+                `<div>
+                     Umeda Sky Building
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3063ac0a17b92e4b9aac10789dfbd7ac = L.marker(
+                [34.7025, 135.4959],
+                {}
+            ).addTo(map_1d485ee0bb592f8d5dc151b6b82ad8ab);
+        
+    
+            var icon_424faf72b9dad2ccaac567949ff6192e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_3063ac0a17b92e4b9aac10789dfbd7ac.setIcon(icon_424faf72b9dad2ccaac567949ff6192e);
+        
+    
+            marker_3063ac0a17b92e4b9aac10789dfbd7ac.bindTooltip(
+                `<div>
+                     Grand Front Osaka
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8a472ee8e062c106b9c0a5ae8e9c65a8 = L.marker(
+                [34.6545, 135.4289],
+                {}
+            ).addTo(map_1d485ee0bb592f8d5dc151b6b82ad8ab);
+        
+    
+            var icon_5d9cba32091cc593f1b8dd748b3cfbd8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_8a472ee8e062c106b9c0a5ae8e9c65a8.setIcon(icon_5d9cba32091cc593f1b8dd748b3cfbd8);
+        
+    
+            marker_8a472ee8e062c106b9c0a5ae8e9c65a8.bindTooltip(
+                `<div>
+                     Osaka Aquarium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f119117aa72c991b4296eeee651e444 = L.marker(
+                [34.6545, 135.4296],
+                {}
+            ).addTo(map_1d485ee0bb592f8d5dc151b6b82ad8ab);
+        
+    
+            var icon_5fe7636980426b2005069f427f85dda0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_6f119117aa72c991b4296eeee651e444.setIcon(icon_5fe7636980426b2005069f427f85dda0);
+        
+    
+            marker_6f119117aa72c991b4296eeee651e444.bindTooltip(
+                `<div>
+                     Tempozan Marketplace
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_617a5666280e4863969effafcedb9d9e = L.marker(
+                [34.6667, 135.7739],
+                {}
+            ).addTo(map_1d485ee0bb592f8d5dc151b6b82ad8ab);
+        
+    
+            var icon_bf24cd603c8d630bb78d282941e7ca23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_617a5666280e4863969effafcedb9d9e.setIcon(icon_bf24cd603c8d630bb78d282941e7ca23);
+        
+    
+            marker_617a5666280e4863969effafcedb9d9e.bindTooltip(
+                `<div>
+                     Fushimi Inari Shrine
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_144cd1b55ff32d6e00d09b4a94d80674 = L.marker(
+                [34.9948, 135.785],
+                {}
+            ).addTo(map_1d485ee0bb592f8d5dc151b6b82ad8ab);
+        
+    
+            var icon_c6d062b68ab563957be24a6d5bd7b085 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_144cd1b55ff32d6e00d09b4a94d80674.setIcon(icon_c6d062b68ab563957be24a6d5bd7b085);
+        
+    
+            marker_144cd1b55ff32d6e00d09b4a94d80674.bindTooltip(
+                `<div>
+                     Kiyomizu Temple
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ee371cf500f4b883e443a435c2f102ee = L.marker(
+                [35.0094, 135.6663],
+                {}
+            ).addTo(map_1d485ee0bb592f8d5dc151b6b82ad8ab);
+        
+    
+            var icon_1c9856455e9dba658e6dbc6e65efe1e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ee371cf500f4b883e443a435c2f102ee.setIcon(icon_1c9856455e9dba658e6dbc6e65efe1e7);
+        
+    
+            marker_ee371cf500f4b883e443a435c2f102ee.bindTooltip(
+                `<div>
+                     Arashiyama
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8e193bf0e9496dc8a929762e8f5805d4 = L.marker(
+                [35.0035, 135.7666],
+                {}
+            ).addTo(map_1d485ee0bb592f8d5dc151b6b82ad8ab);
+        
+    
+            var icon_df32e434ea495fcd8382aabedbade839 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8e193bf0e9496dc8a929762e8f5805d4.setIcon(icon_df32e434ea495fcd8382aabedbade839);
+        
+    
+            marker_8e193bf0e9496dc8a929762e8f5805d4.bindTooltip(
+                `<div>
+                     Kawaramachi Street
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5f483f9ffc80a16f57c1d1202a9773ad = L.marker(
+                [34.6673, 135.5106],
+                {}
+            ).addTo(map_1d485ee0bb592f8d5dc151b6b82ad8ab);
+        
+    
+            var icon_fb9a79570c258d63f3297436aafec15b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5f483f9ffc80a16f57c1d1202a9773ad.setIcon(icon_fb9a79570c258d63f3297436aafec15b);
+        
+    
+            marker_5f483f9ffc80a16f57c1d1202a9773ad.bindTooltip(
+                `<div>
+                     Kuromon Market
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_98829d18c81edb377d43601f07726b9a = L.marker(
+                [34.6635, 135.5022],
+                {}
+            ).addTo(map_1d485ee0bb592f8d5dc151b6b82ad8ab);
+        
+    
+            var icon_f07319410197c26fb3999526496c60cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_98829d18c81edb377d43601f07726b9a.setIcon(icon_f07319410197c26fb3999526496c60cf);
+        
+    
+            marker_98829d18c81edb377d43601f07726b9a.bindTooltip(
+                `<div>
+                     Namba Parks
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
